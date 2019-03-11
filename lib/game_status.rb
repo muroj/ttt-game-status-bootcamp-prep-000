@@ -15,20 +15,21 @@ WIN_COMBINATIONS = [
   [2, 4, 6] 
 ]
 
-def won(board)
-  WIN_COMBINATIONS.each do |winning_indices|
-    board[winning_indices[0]].eqls
+def won?(board)
+  WIN_COMBINATIONS.each do |win|
+    
+    board[win[0]].eqls
   end
   
 end 
 
-def full(board)
+def full?(board)
 end
 
-def draw(board)
+def draw?(board)
 end
 
-def over(board)
+def over?(board)
 end
 
 def winner(board)
