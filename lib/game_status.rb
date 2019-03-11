@@ -17,7 +17,9 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |winc|
-    board[winc[0]].eql?("X") ? board[winc[1]].eql?("X") ? board[winc[2]].eql?("X")
+    if board[winc[0]].eql?("X") && board[winc[1]].eql?("X") && board[winc[2]].eql?("X")
+      return winc
+    else if 
     
     board[win[0]].eqls
   end
