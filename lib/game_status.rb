@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win|
-    if board[win[0]] 
+    board[win[0]].eqls("X") 
     board[win[0]].eqls
   end
   
