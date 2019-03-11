@@ -41,5 +41,5 @@ end
 def winner(board)
   win_combo = won?(board)
   
-  win_combo ? board[win_combo[0]] : false
+  win_combo ? board[win_combo[0]] : nil
 end
