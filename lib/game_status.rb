@@ -16,11 +16,13 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win|
-    board[win[0]].eqls("X") 
+  WIN_COMBINATIONS.each do |winc|
+    board[winc[0]].eql?("X") ? board[winc[1]].eql?("X") ? board[winc[2]].eql?("X")
+    
     board[win[0]].eqls
   end
   
+  return nil
 end 
 
 def full?(board)
