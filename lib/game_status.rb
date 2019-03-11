@@ -20,7 +20,7 @@ def won?(board)
     if (board[winc[0]].eql?("X") && board[winc[1]].eql?("X") && board[winc[2]].eql?("X")) || (board[winc[0]].eql?("O") && board[winc[1]].eql?("O") && board[winc[2]].eql?("O"))
       return winc
     end
-  
+  end
   return false
 end 
 
