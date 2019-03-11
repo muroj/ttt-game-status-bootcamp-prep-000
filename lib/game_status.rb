@@ -26,7 +26,7 @@ end
 
 def full?(board)
   board.all? do |position|
-    position_taken?(board, position)
+    
   end
 end
 
