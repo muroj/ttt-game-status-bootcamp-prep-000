@@ -25,9 +25,9 @@ def won?(board)
 end 
 
 def full?(board)
-  board.all? { |position|
+  board.all? do |position|
     position_taken?(board, position)
-  }
+  end
 end
 
 def draw?(board)
